@@ -11,7 +11,8 @@ body{
     background-color: #3e6eb0;
     align-items: center;
 }
-.header a, .menu a
+
+.header a, .menu a, .header #a, .menu #a
 {
     float: left;
     color: white;
@@ -27,17 +28,19 @@ body{
 {
     margin-top: 13px;
     margin-left: 10px;
+    padding-right: 0px;
 }
-.itens a:hover
+.itens a:hover, .itens #a:hover 
 {
     border: solid 2px #559bd9;
 }
 .itens
 {
     margin: auto;
+    margin-right: 20px;
     float: right;
 }
-.itens a
+.itens a, .itens #a
 {
     margin-top: 36px;
     margin-bottom: 36px;
@@ -216,7 +219,7 @@ body{
     {
         transition: max-height 0.2s ease-out;
     }
-    .menu a
+    .menu a, .menu #a
     {
         float: none;
         display: block;
