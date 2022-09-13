@@ -12,7 +12,20 @@ body{
     align-items: center;
 }
 
-.header a, .menu a, .header #a, .menu #a
+.header a, .header #a
+{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    border: solid 2px #3e6eb0;
+    width: fit-content;
+} 
+.menu a, .menu #a
 {
     float: left;
     color: white;
@@ -179,6 +192,10 @@ video
 
 @media screen and (max-width: 700px)
 {
+    .header a img, .header #a img, .imgSeta
+    {
+        height:13vw ;
+    }
     video
     {
         width: 70vw;
