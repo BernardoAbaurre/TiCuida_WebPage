@@ -1,0 +1,265 @@
+/* *
+{
+    box-sizing: border-box;
+} */
+body{
+    background-color: #3e6eb0;
+}
+.header, .menu
+{
+    overflow: hidden;
+    background-color: #3e6eb0;
+    align-items: center;
+}
+.header a, .menu a
+{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    border: solid 2px #3e6eb0;
+} 
+.header a.logo
+{
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.itens a:hover
+{
+    border: solid 2px #559bd9;
+}
+.itens
+{
+    margin: auto;
+    float: right;
+}
+.itens a
+{
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+.header hr
+{
+    display: none;
+}
+.quemSomos
+{
+    text-align: center;
+    background-image: url("imagens/Fundo.png");
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    color: #3e6eb0;
+}
+.quemSomos h1
+{
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: fit-content;
+    width: fit-content;
+}
+.conteudoQS
+{
+    text-align: left;
+    display: flex;
+}
+.textoQS
+{
+    vertical-align: middle;
+    margin: auto;
+    font-size: 2vw;
+    margin-right: 10px;
+}
+#imgFamilia
+{
+    max-width: 400px;
+    width: 50vw;
+}
+/* como hospedar */
+.comoHosp
+{
+    text-align: center;
+    background-color: #559bd9;
+    padding: 30px;
+}
+.comoHosp h1
+{
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+}
+.conteudoCH
+{
+    text-align: left;
+    display: flex;
+}
+.textoCH
+{
+    vertical-align: middle;
+    margin: auto;
+    font-size: 2vw;
+    color: #4E4E4E;
+    margin-left: 10px;
+}
+#imgCasa
+{
+    max-width: 400px;
+    width: 50vw;
+}
+.btnSeta
+{
+    display: none;
+}
+.menu
+{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100vh;
+}
+.contatos > ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+#telefone, #facebook
+{
+    margin-bottom: 15px;
+}
+.icone
+{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 5px;
+}
+.contatos
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rodape
+{
+    background-color: #3e6eb0;
+    color: white;
+    font-size: 2.5vh;
+    margin-bottom: 0;
+    height: fit-content;
+    padding-bottom: 15px;
+}
+.rodape > h1
+{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+}
+#direitos
+{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 500px)
+{
+    .contatos
+    {
+        display: block;
+        text-align: center;
+    }
+    .CTTesq
+    {
+        margin-bottom: 0;
+    }
+    .CTTdir
+    {
+        margin-top: 5px;
+    }
+    .btnSeta
+    {
+        cursor: pointer;
+        display: block;
+        float: right;
+        margin: auto;
+        margin-top: 36px;
+        margin-right: 20px;
+        background-color: transparent;
+        border: none;
+    }
+    .imgSeta
+    {
+        transition: 0.4s;
+    }
+    .change .imgSeta
+    {
+        transform: rotate(180deg);
+    }
+    .logo
+    {
+        width: fit-content;
+        margin: auto;
+    }
+   
+    .header > .itens
+    {
+        display: none;
+    }
+    .menu
+    {
+        transition: max-height 0.2s ease-out;
+    }
+    .menu a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .itens
+    {
+        float: none;
+    }
+    .header hr, .menu hr
+    {
+        display: block;
+        margin: 0;
+    }
+    /* quem somos */
+    .conteudoQS
+    {
+        display: block;
+        text-align: center;
+    }
+    #imgFamilia
+    {
+        margin-top: 10px;
+    }
+    .textoQS
+    {
+        font-size: 3vw;
+    }
+    /* como hospedar */
+    .conteudoCH
+    {
+        display: block;
+        text-align: center;
+    }
+    #imgCasa
+    {
+        margin-top: 10px;
+    }
+    .textoCH
+    {
+        font-size: 3vw;
+    }
+    
+}
